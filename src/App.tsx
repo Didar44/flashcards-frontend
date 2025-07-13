@@ -33,7 +33,7 @@ function App() {
   const [matchedPairs, setMatchedPairs] = useState<number>(0);
 
   useEffect(() => {
-    // Моковые данные (замените на ваше API)
+   
     const mockData: SubjectsMap = {
       math: {
         name: "Математика",
@@ -234,7 +234,7 @@ function App() {
   );
 }
 
-// Компонент выбора предмета
+
 function SubjectSelection({
   selectSubject,
   subjects
@@ -361,7 +361,7 @@ function FlashcardMode({
   );
 }
 
-// Режим обучения
+
 function LearnMode({
   flashcard,
   onNext,
@@ -412,7 +412,6 @@ function LearnMode({
   );
 }
 
-// Режим тестирования
 function TestMode({
   question,
   options,
@@ -480,7 +479,6 @@ function TestMode({
   );
 }
 
-// Режим сопоставления
 function MatchMode({
   flashcards,
   onBack,
